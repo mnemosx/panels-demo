@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: purple;
+}
+
+#scene-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.colors {
+  position: absolute;
+  width: 100px;
+  z-index: 9999;
+}
+.red,
+.blue,
+.yellow {
+  width: 100px;
+  height: 100px;
+}
+.red {
+  background-color: #ed3b00;
+}
+.blue {
+  background-color: #4224ed;
+}
+.yellow {
+  background-color: #d3e36d;
+}
+.shapes {
+  position: absolute;
+  width: 300px;
+  left: 200px;
+  z-index: 9999;
+  display: flex;
+}
+/* .square,
+.hexagon,
+.triangle {
+  width: 100px;
+  height: 100px;
+} */
+
+.square {
+  width: 75px;
+  height: 75px;
+  background-color: black;
+}
+.hexagon {
+  position: absolute;
+  left: 200px;
+}
+.hexagon::before {
+  position: absolute;
+  top: -40px;
+  /* left: -20px; */
+  content: "\2B22";
+  display: block;
+  color: black;
+  font-size: 120px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  margin-left: 20px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 75px solid black;
+}
