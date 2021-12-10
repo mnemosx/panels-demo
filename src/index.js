@@ -136,8 +136,8 @@ function createMeshes() {
   console.log(shape);
 
   const textureLoader = new TextureLoader();
-  const texture = textureLoader.load(require("./src/white.jpeg"));
-  const texture2 = textureLoader.load(require("./src/white-side-3.jpg"));
+  const texture = textureLoader.load(require("./white.jpeg"));
+  const texture2 = textureLoader.load(require("./white-side-3.jpg"));
   texture.encoding = sRGBEncoding;
   texture.anisotropy = 16;
   texture2.encoding = sRGBEncoding;
