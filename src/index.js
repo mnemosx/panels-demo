@@ -27,7 +27,7 @@ let scene;
 let mesh;
 let controls;
 
-let myColor = "ffffff";
+let myColor = "#ffffff";
 let shape = "square";
 
 let colorsBox1 = document.querySelector(".red");
@@ -36,7 +36,7 @@ colorsBox1.onclick = function (ev) {
   mesh.geometry.dispose();
   // mesh.materials.dispose();
   mesh = undefined;
-  myColor = ev.target.classList[1];
+  myColor = '#ec5e26'
   createMeshes();
 };
 
@@ -46,7 +46,7 @@ colorsBox2.onclick = function (ev) {
   mesh.geometry.dispose();
   // mesh.materials.dispose();
   mesh = undefined;
-  myColor = ev.target.classList[1];
+  myColor = '#4441e0'
   createMeshes();
 };
 
@@ -56,7 +56,7 @@ colorsBox3.onclick = function (ev) {
   mesh.geometry.dispose();
   // mesh.materials.dispose();
   mesh = undefined;
-  myColor = ev.target.classList[1];
+  myColor = '#d3e36d'
   createMeshes();
 };
 
@@ -159,17 +159,17 @@ function createMeshes() {
     // hexagon
     shape === "hexagon" || shape === "triangle"
       ? [
-          new MeshBasicMaterial({ map: texture2, color: `#${myColor}` }),
-          new MeshBasicMaterial({ map: texture, color: `#${myColor}` }),
-          new MeshBasicMaterial({ map: texture, color: `#${myColor}` })
+          new MeshBasicMaterial({ map: texture2, color: myColor }),
+          new MeshBasicMaterial({ map: texture, color: myColor }),
+          new MeshBasicMaterial({ map: texture, color: myColor })
         ]
       : [
-          new MeshBasicMaterial({ map: texture2, color: `#${myColor}` }),
-          new MeshBasicMaterial({ map: texture2, color: `#${myColor}` }),
-          new MeshBasicMaterial({ map: texture, color: `#${myColor}` }),
-          new MeshBasicMaterial({ map: texture, color: `#${myColor}` }),
-          new MeshBasicMaterial({ map: texture2, color: `#${myColor}` }),
-          new MeshBasicMaterial({ map: texture2, color: `#${myColor}` })
+          new MeshBasicMaterial({ map: texture2, color: myColor }),
+          new MeshBasicMaterial({ map: texture2, color: myColor }),
+          new MeshBasicMaterial({ map: texture, color: myColor }),
+          new MeshBasicMaterial({ map: texture, color: myColor }),
+          new MeshBasicMaterial({ map: texture2, color: myColor }),
+          new MeshBasicMaterial({ map: texture2, color: myColor })
         ];
 
   // const material = new MeshStandardMaterial({ map: texture });

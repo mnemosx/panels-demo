@@ -18,12 +18,13 @@ body {
 .yellow {
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 .red {
-  background-color: #ed3b00;
+  background-color: #ec5e26;
 }
 .blue {
-  background-color: #4224ed;
+  background-color: #4441e0;
 }
 .yellow {
   background-color: #d3e36d;
@@ -39,10 +40,12 @@ body {
   width: 75px;
   height: 75px;
   background-color: gray;
+  cursor: pointer;
 }
 .hexagon {
   position: absolute;
   left: 200px;
+  cursor: pointer;
 }
 .hexagon::before {
   position: absolute;
@@ -59,4 +62,5 @@ body {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-bottom: 75px solid gray;
+  cursor: pointer;
 }
