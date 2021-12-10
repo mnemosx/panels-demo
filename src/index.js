@@ -14,7 +14,7 @@ import {
   RepeatWrapping,
   GammaEncoding
 } from "three";
-import OrbitControls from "three-orbitcontrols";
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { getGPUTier } from "detect-gpu";
 
 const gpu = getGPUTier();
@@ -136,8 +136,8 @@ function createMeshes() {
   console.log(shape);
 
   const textureLoader = new TextureLoader();
-  const texture = textureLoader.load("./src/white.jpeg");
-  const texture2 = textureLoader.load("./src/white-side-3.jpg");
+  const texture = textureLoader.load("./white.jpeg");
+  const texture2 = textureLoader.load("./white-side-3.jpg");
   texture.encoding = sRGBEncoding;
   texture.anisotropy = 16;
   texture2.encoding = sRGBEncoding;
@@ -182,6 +182,7 @@ function createRenderer() {
   renderer.setSize(container.clientWidth, container.clientHeight);
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.gammaFactor = 2.2;
+  // renderer.outputOutput = true;
   renderer.outputEncoding = GammaEncoding;
   renderer.physicallyCorrectLights = true;
 

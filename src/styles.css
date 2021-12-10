@@ -1,22 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  color: white;
   text-align: center;
-}
-
-h1 {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  font-size: 1.5rem;
-}
-
-a {
-  color: white;
-}
-a:hover {
-  color: purple;
 }
 
 #scene-container {
@@ -27,7 +12,6 @@ a:hover {
 .colors {
   position: absolute;
   width: 100px;
-  z-index: 9999;
 }
 .red,
 .blue,
@@ -48,20 +32,13 @@ a:hover {
   position: absolute;
   width: 300px;
   left: 200px;
-  z-index: 9999;
   display: flex;
 }
-/* .square,
-.hexagon,
-.triangle {
-  width: 100px;
-  height: 100px;
-} */
 
 .square {
   width: 75px;
   height: 75px;
-  background-color: black;
+  background-color: gray;
 }
 .hexagon {
   position: absolute;
@@ -70,10 +47,9 @@ a:hover {
 .hexagon::before {
   position: absolute;
   top: -40px;
-  /* left: -20px; */
   content: "\2B22";
   display: block;
-  color: black;
+  color: gray;
   font-size: 120px;
 }
 .triangle {
@@ -82,5 +58,5 @@ a:hover {
   margin-left: 20px;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 75px solid black;
+  border-bottom: 75px solid gray;
 }
