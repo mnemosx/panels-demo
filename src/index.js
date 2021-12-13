@@ -101,7 +101,7 @@ function init() {
 
   // Creating the scene
   scene = new Scene();
-  scene.background = new Color("skyblue");
+  scene.background = new Color("white");
 
   createCamera();
   createLights();
